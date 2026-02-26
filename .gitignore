@@ -1,0 +1,14 @@
+node_modules
+dist
+.vite
+*.tsbuildinfo
+
+# Stockfish engine binaries. Build outputs of the `stockfish` npm package, not
+# source — the full build alone is 108 MB, past GitHub's hard file limit.
+# `bun install` regenerates these via scripts/setup-engine.mjs.
+public/stockfish-*.js
+public/stockfish-*.wasm
+
+.DS_Store
+.env
+.env.local
